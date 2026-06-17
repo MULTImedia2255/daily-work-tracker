@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - Daily Work Tracker</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary: #1565C0;
+    --primary-light: #E3F2FD;
+    --text: #1a2340;
+    --muted: #7a8aaa;
+    --bg: #EEF4FF;
+    --card-bg: #ffffff;
+    --border: #D6E4F7;
+    --success: #2E7D32;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 24px 16px;
+  }
+  .container {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, var(--primary) 0%, #1976D2 60%, #42A5F5 100%);
+    border-radius: 24px;
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(21, 101, 192, 0.25);
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  .header p {
+    font-size: 14px;
+    opacity: 0.9;
+    font-weight: 600;
+  }
+  .card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(21, 101, 192, 0.06);
+    border: 1px solid var(--border);
+  }
+  .section-title {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  p {
+    font-size: 14px;
+    color: #37474f;
+    margin-bottom: 12px;
+  }
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #E8F5E9;
+    color: var(--success);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+  .bullet-list {
+    list-style: none;
+    margin-bottom: 12px;
+  }
+  .bullet-list li {
+    font-size: 14px;
+    color: #37474f;
+    padding-left: 24px;
+    position: relative;
+    margin-bottom: 8px;
+  }
+  .bullet-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--success);
+    font-weight: bold;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>Daily Work Tracker</h1>
+    <p>Privacy Policy & Data Access Guide</p>
+  </div>
+
+  <div class="card" style="text-align: center;">
+    <div class="status-badge">
+      🛡️ 100% Safe & Local App
+    </div>
+    <p style="font-weight: 600; font-size: 15px;">
+      This application is built with your absolute privacy in mind. It does not collect, transmit, or monitor any of your data.
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="section-title">
+      💾 Offline Local Storage
+    </div>
+    <p>
+      All work details (including titles, locations, organizer names, descriptions, and payment details) that you enter are stored <strong>only on your own device</strong>.
+    </p>
+    <ul class="bullet-list">
+      <li>Data is stored locally using secure database preferences (SharedPreferences / Web LocalStorage).</li>
+      <li>There is no external server or cloud storage.</li>
+      <li>If you delete or clear the app data, all entered records will be permanently erased. We do not keep any backups.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="section-title">
+      🚫 Zero Data Access & Permissions
+    </div>
+    <p>
+      Unlike other apps, Daily Work Tracker does not require any background internet or data collection permissions to operate:
+    </p>
+    <ul class="bullet-list">
+      <li><strong>No Account Required:</strong> You can start tracking your works immediately without providing emails, phone numbers, or passwords.</li>
+      <li><strong>No Internet Permission:</strong> The app does not transmit anything online. Your work logs never leave your phone.</li>
+      <li><strong>No Location Access:</strong> Even though you can type a location manually, the app does not request GPS or track your position.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="section-title">
+      🔔 Why Local Permissions are Used
+    </div>
+    <p>
+      The app requests permissions ONLY for the following core utility features:
+    </p>
+    <ul class="bullet-list">
+      <li><strong>Notifications:</strong> Required to post notification bar alerts when your scheduled "Reminder At" time is reached. You can deny this if you do not want reminders.</li>
+      <li><strong>Vibration / Haptic:</strong> Used exclusively to vibrate the phone when the alarm pops up to grab your attention.</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2026 Daily Work Tracker. All rights reserved.</p>
+    <p>Strictly offline, secure, and personal.</p>
+  </div>
+</div>
+
+</body>
+</html>
